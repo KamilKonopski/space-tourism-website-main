@@ -4,19 +4,19 @@ const Menu = () => {
     const links = [
         {
             name: 'home',
-            path: '/',
+            path: '',
         },
         {
             name: 'destination',
-            path: '/destination',
+            path: 'destination',
         },
         {
             name: 'crew',
-            path: '/crew',
+            path: 'crew',
         },
         {
             name: 'technology',
-            path: '/technology',
+            path: 'technology',
         },
     ]
 
@@ -24,7 +24,7 @@ const Menu = () => {
         <ul>
             {links.map((link, index) => (
                 <li key={index}>
-                    <Link to={`${link.path}`}><span>0{index}</span>{link.name}</Link>
+                    <Link to={`/${link.path}`}><span>0{index}</span>{link.name}</Link>
                 </li>
             ))}
         </ul>

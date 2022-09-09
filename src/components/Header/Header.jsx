@@ -1,5 +1,3 @@
-
-
 import Menu from '../Menu/Menu'
 
 import logoImage from '../../assets/shared/logo.svg';

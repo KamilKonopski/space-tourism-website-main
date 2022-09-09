@@ -7,9 +7,13 @@ import Destination from './pages/Destination/Destination'
 import Crew from './pages/Crew/Crew'
 import Technology from './pages/Technology/Technology'
 
+import { Wrapper } from './App.styled'
+
 const App = () => {
+  const location = window.location.pathname;
+  console.log(location);
   return (
-    <div>
+    <Wrapper>
       <Router>
         <Header />
         <Routes>
@@ -19,7 +23,7 @@ const App = () => {
           <Route path="/technology" element={<Technology />} />
          </Routes>
       </Router>
-    </div>
+    </Wrapper>
   );
 }
 
