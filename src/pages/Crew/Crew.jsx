@@ -1,8 +1,13 @@
+import Header from "../../components/Header/Header";
+
+import { Wrapper } from "./Crew.styled";
+
 const Crew = () => {
     return (
-        <div>
+        <Wrapper>
+            <Header />
             hej crew
-        </div>
+        </Wrapper>
     );
 };
 

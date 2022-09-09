@@ -1,8 +1,12 @@
+import Header from '../../components/Header/Header';
+
+import { Wrapper } from './Destination.styled'
 const Destination = () => {
     return (
-        <div>
+        <Wrapper>
+            <Header />
             hej destination
-        </div>
+        </Wrapper>
     );
 };
 

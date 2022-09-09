@@ -1,8 +1,12 @@
+import Header from '../../components/Header/Header';
+
+import { Wrapper } from './Home.styled'
 const Home = () => {
     return (
-        <div className="home-bg">
+        <Wrapper>
+            <Header />
             hej home
-        </div>
+        </Wrapper>
     );
 };
 

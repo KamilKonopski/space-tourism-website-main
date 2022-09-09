@@ -1,8 +1,13 @@
+import Header from "../../components/Header/Header";
+
+import { Wrapper } from "./Technology.styled";
+
 const Technology = () => {
     return (
-        <div>
+        <Wrapper>
+            <Header />
             hej technology
-        </div>
+        </Wrapper>
     );
 };
 
