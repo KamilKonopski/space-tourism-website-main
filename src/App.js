@@ -9,7 +9,7 @@ import Technology from './pages/Technology/Technology'
 
 const App = () => {
   return (
-    <>
+    <div>
       <Router>
         <Header />
         <Routes>
@@ -17,9 +17,9 @@ const App = () => {
           <Route path="/destination" element={<Destination />} />
           <Route path="/crew" element={<Crew />} />
           <Route path="/technology" element={<Technology />} />
-        </Routes>
+         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 
