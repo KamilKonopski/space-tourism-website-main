@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <Wrapper>
             <Header />
-            hej home
+            Hej Home
         </Wrapper>
     );
 };
