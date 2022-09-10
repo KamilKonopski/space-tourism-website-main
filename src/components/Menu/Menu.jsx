@@ -1,4 +1,8 @@
-import { Link } from "react-router-dom";
+
+
+import { CloseMenu, LinkStyle, LinkWrapper, Wrapper } from "./Menu.styled";
+
+import closeMobileMenu from '../../assets/shared/icon-close.svg';
 
 const Menu = () => {
     const links = [
@@ -21,13 +25,16 @@ const Menu = () => {
     ]
 
     return (
-        <ul>
+        <Wrapper>
+            <CloseMenu>
+                <img src={closeMobileMenu} alt="close mobile menu icon" />
+            </CloseMenu>
             {links.map((link, index) => (
-                <li key={index}>
-                    <Link to={`/${link.path}`}><span>0{index}</span>{link.name}</Link>
-                </li>
+                <LinkWrapper key={index}>
+                    <LinkStyle to={`/${link.path}`}><span>0{index}</span>{link.name}</LinkStyle>
+                </LinkWrapper>
             ))}
-        </ul>
+        </Wrapper>
     )
 }
 

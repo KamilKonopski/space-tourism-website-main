@@ -1,6 +1,6 @@
 // import { useState } from 'react';
 
-// import Menu from '../Menu/Menu'
+import Menu from '../Menu/Menu';
 
 import logoImage from '../../assets/shared/logo.svg';
 import mobileMenu from '../../assets/shared/icon-hamburger.svg';
@@ -18,7 +18,7 @@ const Header = () => {
                 <MobileMenu>
                     <img src={mobileMenu} alt="hamburger menu" />
                 </MobileMenu>
-                {/* <Menu /> */}
+                <Menu />
             </nav>
         </Wrapper>
 
