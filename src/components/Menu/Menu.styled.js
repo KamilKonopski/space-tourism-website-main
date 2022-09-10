@@ -9,9 +9,9 @@ export const Wrapper = styled.ul`
     list-style: none;
     position: absolute;
     right: 0;
+    top: 0;
     transform: ${({isVisible}) => isVisible ? 'translateX(0)' : 'translateX(100%)'};
     transition: transform 0.3s linear;
-    top: 0;
     width: 254px;
     z-index: 1;
 `;
