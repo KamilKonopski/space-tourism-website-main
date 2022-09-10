@@ -9,4 +9,9 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
     }
+
+    body {
+        margin: 0 auto;
+        max-width: 1440px;
+    }
 `
