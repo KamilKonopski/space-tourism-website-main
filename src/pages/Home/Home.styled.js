@@ -1,11 +1,26 @@
 import { Link } from "react-router-dom";
 
 import mobileHomeBg from '../../assets/home/background-home-mobile.jpg';
+import tabletHomeBg from '../../assets/home/background-home-tablet.jpg';
+import desktopHomeBg from '../../assets/home/background-home-desktop.jpg';
+
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    background: url(${mobileHomeBg});
+    background: url(${mobileHomeBg}) no-repeat;
+    background-size: cover;
     height: 100vh;
+    width: 100%;
+
+    @media screen and (min-width: 800px) {
+        background: url(${tabletHomeBg}) no-repeat;
+        background-size: cover;
+    }
+
+    @media screen and (min-width: 1280px) {
+        background: url(${desktopHomeBg}) no-repeat;
+        background-size: cover;
+    }
 `;
 
 export const ContentWrapper = styled.main`
