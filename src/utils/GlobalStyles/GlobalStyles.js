@@ -10,8 +10,13 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
     }
 
+    html {
+        overflow-x: hidden;
+    }
+
     body {
         margin: 0 auto;
         max-width: 1440px;
+        overflow-x: hidden;
     }
 `
