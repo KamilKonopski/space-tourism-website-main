@@ -4,7 +4,7 @@ import { CloseMenu, LinkStyle, LinkWrapper, Wrapper } from "./Menu.styled";
 
 import closeMobileMenu from '../../assets/shared/icon-close.svg';
 
-const Menu = () => {
+const Menu = ({ isVisible, hideMobileMenu }) => {
     const links = [
         {
             name: 'home',
@@ -25,8 +25,8 @@ const Menu = () => {
     ]
 
     return (
-        <Wrapper>
-            <CloseMenu>
+        <Wrapper isVisible={isVisible}>
+            <CloseMenu onClick={hideMobileMenu}>
                 <img src={closeMobileMenu} alt="close mobile menu icon" />
             </CloseMenu>
             {links.map((link, index) => (

@@ -9,12 +9,15 @@ export const Wrapper = styled.ul`
     list-style: none;
     position: absolute;
     right: 0;
+    transform: ${({isVisible}) => isVisible ? 'translateX(0)' : 'translateX(100%)'};
+    transition: transform 0.3s linear;
     top: 0;
     width: 254px;
     z-index: 1;
 `;
 
 export const CloseMenu = styled.div`
+    cursor: pointer;
     padding: 34px 0 45px 200px;
 `;
 
