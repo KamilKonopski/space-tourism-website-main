@@ -1,17 +1,26 @@
-import Menu from '../Menu/Menu'
+// import { useState } from 'react';
+
+// import Menu from '../Menu/Menu'
 
 import logoImage from '../../assets/shared/logo.svg';
+import mobileMenu from '../../assets/shared/icon-hamburger.svg';
+import { Logo, MobileMenu, Wrapper } from './Header.styled';
 
 const Header = () => {
+    // const [isActive, setIsActive] = useState(false);
+
     return (
-        <header>
-            <div>
+        <Wrapper>
+            <Logo>
                 <img src={logoImage} alt="star logo" />
-            </div>
+            </Logo>
             <nav>
-                <Menu />
+                <MobileMenu>
+                    <img src={mobileMenu} alt="hamburger menu" />
+                </MobileMenu>
+                {/* <Menu /> */}
             </nav>
-        </header>
+        </Wrapper>
 
     );
 };
