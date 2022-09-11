@@ -47,6 +47,7 @@ export const LinkStyle = styled(Link)`
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
+    transition: 0.2s linear;
 
     span {
         font-weight: bold;
@@ -58,8 +59,10 @@ export const LinkStyle = styled(Link)`
         }
     }
     @media screen and (min-width: 800px) {
-        border-bottom: 3px solid white;
+        :hover {
+        border-bottom: 3px solid #979797;
         padding-bottom: 37px;
+        }
     }
     
 `;
