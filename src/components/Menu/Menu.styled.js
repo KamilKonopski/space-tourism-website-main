@@ -14,15 +14,31 @@ export const Wrapper = styled.ul`
     transition: transform 0.3s linear;
     width: 254px;
     z-index: 1;
+
+    @media screen and (min-width: 800px) {
+        backdrop-filter: blur(0);
+        background: rgba(11, 13, 23, 0.8);
+        flex-direction: row;
+        height: 96px;
+        line-height: 96px;
+        position: static;
+        transform: translateX(0);
+        width: 100%;
+    }
 `;
 
 export const CloseMenu = styled.div`
     cursor: pointer;
     padding: 34px 0 45px 200px;
+
+    @media screen and (min-width: 800px) {
+        display: none;
+    }
 `;
 
 export const LinkWrapper = styled.li`
     margin: 0 0 35px 40px;
+    padding-right: 30px;
 `;
 
 export const LinkStyle = styled(Link)`
@@ -36,5 +52,14 @@ export const LinkStyle = styled(Link)`
         font-weight: bold;
         letter-spacing: 4px;
         margin-right: 10px;
+
+        @media screen and (min-width: 800px) {
+            display: none;
+        }
     }
+    @media screen and (min-width: 800px) {
+        border-bottom: 3px solid white;
+        padding-bottom: 37px;
+    }
+    
 `;

@@ -19,4 +19,8 @@ export const MobileMenu = styled.button`
     border: none;
     cursor: pointer;
     padding: 33px 24px;
+
+    @media screen and (min-width: 800px) {
+        display: none;
+    }
 `;
