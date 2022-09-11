@@ -29,6 +29,7 @@ export const Wrapper = styled.ul`
     @media screen and (min-width: 1280px) {
         backdrop-filter: blur(35px);
         background: transparent;
+        margin-top: 40px;
     }
 `;
 
