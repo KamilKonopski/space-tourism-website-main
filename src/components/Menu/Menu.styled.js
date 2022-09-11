@@ -57,6 +57,10 @@ export const LinkStyle = styled(Link)`
         @media screen and (min-width: 800px) {
             display: none;
         }
+
+        @media screen and (min-width: 1280px) {
+            display: inline-block;
+        }
     }
     @media screen and (min-width: 800px) {
         :hover {
