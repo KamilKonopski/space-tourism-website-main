@@ -17,13 +17,18 @@ export const Wrapper = styled.ul`
 
     @media screen and (min-width: 800px) {
         backdrop-filter: blur(0);
-        background: rgba(11, 13, 23, 0.8);
+        background: rgba(151, 151, 151, .1);
         flex-direction: row;
         height: 96px;
         line-height: 96px;
         position: static;
         transform: translateX(0);
         width: 100%;
+    }
+
+    @media screen and (min-width: 1280px) {
+        backdrop-filter: blur(35px);
+        background: transparent;
     }
 `;
 
@@ -56,6 +61,10 @@ export const LinkStyle = styled(Link)`
 
         @media screen and (min-width: 800px) {
             display: none;
+        }
+
+        @media screen and (min-width: 1280px) {
+            display: inline-block;
         }
     }
     @media screen and (min-width: 800px) {
