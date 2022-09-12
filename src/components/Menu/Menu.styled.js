@@ -61,6 +61,10 @@ export const LinkStyle = styled(NavLink)`
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
+    &.active {
+        border-bottom: 3px solid ${({theme}) => theme.colors.white};
+        padding-bottom: 37px;
+    }
 
     span {
         font-weight: bold;

@@ -3,7 +3,6 @@ import { CloseMenu, LinkStyle, LinkWrapper, Wrapper } from "./Menu.styled";
 import closeMobileMenu from '../../assets/shared/icon-close.svg';
 
 const Menu = ({ isVisible, hideMobileMenu }) => {
-
     const links = [
         {
             name: 'home',
