@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+
+import { NavLink } from "react-router-dom";
 
 export const Wrapper = styled.ul`
     backdrop-filter: blur(35px);
@@ -47,13 +48,12 @@ export const LinkWrapper = styled.li`
     padding-right: 30px;
 `;
 
-export const LinkStyle = styled(Link)`
+export const LinkStyle = styled(NavLink)`
     color: ${({theme}) => theme.colors.white};
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
-    transition: 0.2s linear;
 
     span {
         font-weight: bold;
@@ -74,5 +74,4 @@ export const LinkStyle = styled(Link)`
         padding-bottom: 37px;
         }
     }
-    
 `;

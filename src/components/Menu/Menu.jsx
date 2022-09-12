@@ -1,26 +1,25 @@
-
-
 import { CloseMenu, LinkStyle, LinkWrapper, Wrapper } from "./Menu.styled";
 
 import closeMobileMenu from '../../assets/shared/icon-close.svg';
 
 const Menu = ({ isVisible, hideMobileMenu }) => {
+
     const links = [
         {
             name: 'home',
-            path: '',
+            path: '/',
         },
         {
             name: 'destination',
-            path: 'destination',
+            path: '/destination',
         },
         {
             name: 'crew',
-            path: 'crew',
+            path: '/crew',
         },
         {
             name: 'technology',
-            path: 'technology',
+            path: '/technology',
         },
     ]
 
@@ -31,10 +30,11 @@ const Menu = ({ isVisible, hideMobileMenu }) => {
             </CloseMenu>
             {links.map((link, index) => (
                 <LinkWrapper key={index}>
-                    <LinkStyle to={`/${link.path}`}><span>0{index}</span>{link.name}</LinkStyle>
+                    <LinkStyle to={`${link.path}`}><span>0{index}</span>{link.name}</LinkStyle>
                 </LinkWrapper>
-            ))}
-        </Wrapper>
+            ))
+            }
+        </Wrapper >
     )
 }
 
