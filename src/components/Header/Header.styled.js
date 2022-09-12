@@ -13,7 +13,9 @@ export const Logo = styled.div`
     width: 40px;
 
     @media screen and (min-width: 1280px) {
-        
+        height: 48px;
+        padding: 64px 55px;
+        width: 48px;
     }
 `;
 
