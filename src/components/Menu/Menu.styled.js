@@ -31,6 +31,7 @@ export const Wrapper = styled.ul`
         backdrop-filter: blur(35px);
         background: transparent;
         margin-top: 40px;
+        margin-right: 100px;
     }
 `;
 
@@ -46,6 +47,12 @@ export const CloseMenu = styled.div`
 export const LinkWrapper = styled.li`
     margin: 0 0 35px 40px;
     padding-right: 30px;
+
+    @media screen and (min-width: 1280px) {
+    &:first-of-type {
+        margin-left: 150px;
+    }
+}
 `;
 
 export const LinkStyle = styled(NavLink)`

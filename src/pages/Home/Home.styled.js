@@ -32,6 +32,19 @@ export const ContentWrapper = styled.main`
     @media screen and (min-width: 800px) {
         margin-top: 106px;
     }
+
+    @media screen and (min-width: 1280px) {
+        align-items: start;
+        display: grid;
+        grid-template-areas: 
+            'subheading button'
+            'heading button'
+            'paragraf button';
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        margin-top: 251px;
+    }
 `;
 
 export const SubHeading = styled.span`
@@ -45,6 +58,12 @@ export const SubHeading = styled.span`
         font-size: 20px;
         letter-spacing: 3.38px;
         margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        grid-area: subheading;
+        font-size: 28px;
+        letter-spacing: 4.72px;
     }
 `;
 
@@ -61,6 +80,12 @@ export const Heading = styled.h1`
         font-size: 150px;
         margin-bottom: 24px;
     }
+
+    @media screen and (min-width: 1280px) {
+        grid-area: heading;
+        text-align: left;
+    }
+
 `;
 
 export const Text = styled.p`
@@ -78,6 +103,14 @@ export const Text = styled.p`
         margin-bottom: 150px;
         padding: 0 180px;
     }
+
+    @media screen and (min-width: 1280px) {
+        grid-area: paragraf;
+        font-size: 18px;
+        line-height: 32px;
+        padding: 0 260px 0 260px;
+        text-align: left;
+    }
 `;
 
 export const Button = styled.button`
@@ -92,6 +125,14 @@ export const Button = styled.button`
         height: 242px;
         width: 242px;   
     }
+
+    @media screen and (min-width: 1280px) {
+        grid-area: button;
+        height: 274px;
+        margin-top: 80px;
+        width: 274px; 
+    }
+
 `;
 
 export const ExploreButton = styled(Link)`
@@ -104,4 +145,4 @@ export const ExploreButton = styled(Link)`
     @media screen and (min-width: 800px) {
         font-size: 32px;
     }
-`
+`;

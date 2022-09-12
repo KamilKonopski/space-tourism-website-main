@@ -4,7 +4,7 @@ import Menu from '../Menu/Menu';
 
 import logoImage from '../../assets/shared/logo.svg';
 import mobileMenu from '../../assets/shared/icon-hamburger.svg';
-import { Logo, MobileMenu, Wrapper } from './Header.styled';
+import { Line, Logo, MobileMenu, Wrapper } from './Header.styled';
 
 const Header = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -22,6 +22,7 @@ const Header = () => {
             <Logo>
                 <img src={logoImage} alt="star logo" />
             </Logo>
+            <Line></Line>
             <nav>
                 <MobileMenu onClick={showMobileMenu}>
                     <img src={mobileMenu} alt="hamburger menu" />
