@@ -12,6 +12,9 @@ export const Logo = styled.div`
     padding: 24px 24px;
     width: 40px;
 
+    @media screen and (min-width: 1280px) {
+        
+    }
 `;
 
 export const MobileMenu = styled.button`

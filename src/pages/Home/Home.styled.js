@@ -28,6 +28,10 @@ export const ContentWrapper = styled.main`
     flex-wrap: wrap;
     font-family: 'Bellefair', serif;
     justify-content: center;
+
+    @media screen and (min-width: 800px) {
+        margin-top: 106px;
+    }
 `;
 
 export const SubHeading = styled.span`
@@ -36,6 +40,12 @@ export const SubHeading = styled.span`
     letter-spacing: 2.7px;
     margin-bottom: 16px;
     text-transform: uppercase;
+
+    @media screen and (min-width: 800px) {
+        font-size: 20px;
+        letter-spacing: 3.38px;
+        margin-bottom: 24px;
+    }
 `;
 
 export const Heading = styled.h1`
@@ -46,6 +56,11 @@ export const Heading = styled.h1`
     margin-bottom: 16px;
     text-align: center;
     text-transform: uppercase;
+
+    @media screen and (min-width: 800px) {
+        font-size: 150px;
+        margin-bottom: 24px;
+    }
 `;
 
 export const Text = styled.p`
@@ -56,6 +71,13 @@ export const Text = styled.p`
     margin-bottom: 80px;
     padding: 0 25px;
     text-align: center;
+
+    @media screen and (min-width: 800px) {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 150px;
+        padding: 0 180px;
+    }
 `;
 
 export const Button = styled.button`
@@ -65,6 +87,11 @@ export const Button = styled.button`
     cursor: pointer;
     height: 150px;
     width: 150px;
+
+    @media screen and (min-width: 800px) {
+        height: 242px;
+        width: 242px;   
+    }
 `;
 
 export const ExploreButton = styled(Link)`
@@ -73,4 +100,8 @@ export const ExploreButton = styled(Link)`
     font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
+
+    @media screen and (min-width: 800px) {
+        font-size: 32px;
+    }
 `
