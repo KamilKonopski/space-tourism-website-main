@@ -1,11 +1,19 @@
-import Header from '../../components/Header/Header';
+// import { NavLink } from "react-router-dom";
 
-import { Wrapper } from './Destination.styled'
-const Destination = () => {
+import Header from '../../components/Header/Header';
+import DestinationItem from '../../components/DestinationItem/DestinationItem'
+
+import { Wrapper } from './Destination.styled';
+
+const Destination = (props) => {
+    console.log(props);
+    // const moon = destinations.findIndex(destination => destination.name.toLowerCase() === 'moon');
     return (
         <Wrapper>
             <Header />
-            hej destination
+            <main>
+                <DestinationItem />
+            </main>
         </Wrapper>
     );
 };
