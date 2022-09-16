@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import mobileHomeBg from '../../assets/home/background-home-mobile.jpg';
 import tabletHomeBg from '../../assets/home/background-home-tablet.jpg';
 import desktopHomeBg from '../../assets/home/background-home-desktop.jpg';
@@ -135,7 +133,7 @@ export const Button = styled.button`
 
 `;
 
-export const ExploreButton = styled(Link)`
+export const ExploreButton = styled.span`
     color: ${({theme}) => theme.colors.dark};
     font-family: 'Bellefair', serif;
     font-size: 20px;
