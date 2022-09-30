@@ -1,4 +1,4 @@
-const TechnologyItem = () => {
+function TechnologyItem() {
     return (
         <div></div>
     )

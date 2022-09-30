@@ -1,8 +1,8 @@
-import { CloseMenu, LinkStyle, LinkWrapper, Wrapper } from "./Menu.styled";
+import { NavLink } from 'react-router-dom';
 
 import closeMobileMenu from '../../assets/shared/icon-close.svg';
 
-const Menu = ({ isVisible, hideMobileMenu }) => {
+function Menu({ isVisible, hideMobileMenu }) {
     const links = [
         {
             name: 'home',
@@ -23,17 +23,17 @@ const Menu = ({ isVisible, hideMobileMenu }) => {
     ]
 
     return (
-        <Wrapper isVisible={isVisible}>
-            <CloseMenu onClick={hideMobileMenu}>
+        <div isVisible={isVisible}>
+            <div onClick={hideMobileMenu}>
                 <img src={closeMobileMenu} alt="close mobile menu icon" />
-            </CloseMenu>
+            </div>
             {links.map((link, index) => (
-                <LinkWrapper key={index}>
-                    <LinkStyle to={`${link.path}`}><span>0{index}</span>{link.name}</LinkStyle>
-                </LinkWrapper>
+                <li key={index}>
+                    <NavLink to={`${link.path}`}><span>0{index}</span>{link.name}</NavLink>
+                </li>
             ))
             }
-        </Wrapper >
+        </div>
     )
 }
 

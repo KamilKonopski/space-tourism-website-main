@@ -1,5 +1,4 @@
-const DestinationItem = (props) => {
-    console.log(props);
+function DestinationItem() {
     return (
         <div>sdfsdaf</div>
     )

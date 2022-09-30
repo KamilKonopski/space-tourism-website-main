@@ -4,32 +4,31 @@ import Menu from '../Menu/Menu';
 
 import logoImage from '../../assets/shared/logo.svg';
 import mobileMenu from '../../assets/shared/icon-hamburger.svg';
-import { Line, Logo, MobileMenu, Wrapper } from './Header.styled';
 
-const Header = () => {
+function Header() {
     const [isVisible, setIsVisible] = useState(false);
 
-    const showMobileMenu = () => {
+    function showMobileMenu() {
         setIsVisible(true)
     };
 
-    const hideMobileMenu = () => {
+    function hideMobileMenu() {
         setIsVisible(false)
     };
 
     return (
-        <Wrapper>
-            <Logo>
+        <>
+            <div>
                 <img src={logoImage} alt="star logo" />
-            </Logo>
-            <Line></Line>
+            </div>
+            <div></div>
             <nav>
-                <MobileMenu onClick={showMobileMenu}>
+                <div onClick={showMobileMenu}>
                     <img src={mobileMenu} alt="hamburger menu" />
-                </MobileMenu>
+                </div>
                 <Menu isVisible={isVisible} hideMobileMenu={hideMobileMenu} />
             </nav>
-        </Wrapper>
+        </>
 
     );
 };

@@ -3,18 +3,15 @@
 import Header from '../../components/Header/Header';
 import DestinationItem from '../../components/DestinationItem/DestinationItem'
 
-import { Wrapper } from './Destination.styled';
-
-const Destination = (props) => {
-    console.log(props);
+function Destination() {
     // const moon = destinations.findIndex(destination => destination.name.toLowerCase() === 'moon');
     return (
-        <Wrapper>
+        <>
             <Header />
             <main>
                 <DestinationItem />
             </main>
-        </Wrapper>
+        </>
     );
 };
 

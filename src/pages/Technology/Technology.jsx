@@ -1,13 +1,11 @@
 import Header from "../../components/Header/Header";
 
-import { Wrapper } from "./Technology.styled";
-
-const Technology = () => {
+function Technology() {
     return (
-        <Wrapper>
+        <>
             <Header />
             hej technology
-        </Wrapper>
+        </>
     );
 };
 

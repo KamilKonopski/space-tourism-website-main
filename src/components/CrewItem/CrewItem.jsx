@@ -1,4 +1,4 @@
-const CrewItem = () => {
+function CrewItem() {
     return (
         <div></div>
     )
