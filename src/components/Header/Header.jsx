@@ -23,9 +23,9 @@ function Header() {
             </div>
             <div></div>
             <nav>
-                <div onClick={showMobileMenu}>
+                <button onClick={showMobileMenu}>
                     <img src={mobileMenu} alt="hamburger menu" />
-                </div>
+                </button>
                 <Menu isVisible={isVisible} hideMobileMenu={hideMobileMenu} />
             </nav>
         </>
