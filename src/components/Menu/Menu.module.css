@@ -1,0 +1,12 @@
+.menu {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(0);
+    transition: transform 0.2s linear;
+}
+
+.menu.hidden {
+    transform: translateX(150%);
+}
