@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 import Menu from '../Menu/Menu';
 
+
+import classes from './Header.module.css'
 import logoImage from '../../assets/shared/logo.svg';
 import mobileMenu from '../../assets/shared/icon-hamburger.svg';
 
@@ -17,18 +19,18 @@ function Header() {
     };
 
     return (
-        <>
-            <div>
+        <header className={classes.header}>
+            <div className={classes.logo}>
                 <img src={logoImage} alt="star logo" />
             </div>
             <div></div>
-            <nav>
-                <div onClick={showMobileMenu}>
+            <nav className={classes.nav}>
+                <div className={classes.burger} onClick={showMobileMenu}>
                     <img src={mobileMenu} alt="hamburger menu" />
                 </div>
                 <Menu isVisible={isVisible} hideMobileMenu={hideMobileMenu} />
             </nav>
-        </>
+        </header>
 
     );
 };
