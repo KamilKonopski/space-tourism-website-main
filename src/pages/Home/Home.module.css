@@ -25,6 +25,7 @@
 
 .home-page button {
     background-color: var(--white-color);
+    border-radius: 50%;
     height: 150px;
     width: 150px;
 }
@@ -32,6 +33,26 @@
 @media screen and (min-width: 800px) {
     .home-page {
         background-image: url(../../assets/home/background-home-tablet.jpg);
+    }
+
+    .home-page h2 {
+        font-size: 2rem;
+        letter-spacing: 3.38px;
+    }
+
+    .home-page h1 {
+        font-size: 15rem;
+        line-height: 150px;
+    }
+
+    .home-page p {
+        font-size: 1.6rem;
+        line-height: 28px;
+    }
+
+    .home-page button {
+        height: 242px;
+        width: 242px;
     }
 }
 
