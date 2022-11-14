@@ -60,4 +60,23 @@
     .home-page {
         background-image: url(../../assets/home/background-home-desktop.jpg);
     }
+
+    .home-page h2 {
+        font-size: 2.8rem;
+        letter-spacing: 4.42px;
+    }
+
+    .home-page h1 {
+        line-height: auto;
+    }
+
+    .home-page p {
+        font-size: 1.8rem;
+        line-height: 32px;
+    }
+
+    .home-page button {
+        height: 274px;
+        width: 274px;
+    }
 }
