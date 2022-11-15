@@ -20,26 +20,29 @@ function Destination() {
     const [travel, setTravel] = useState(destinations[0].travel);
 
     function changeContentHandler(e) {
-        const target = e.target
-        if (target.textContent === 'Moon') {
+        const target = e.target.textContent
+        if (target === 'Moon') {
             setImage(moonImage)
             setName(destinations[0].name)
             setDesc(destinations[0].description)
             setDistance(destinations[0].distance)
             setTravel(destinations[0].travel)
-        } else if (target.textContent === 'Mars') {
+
+        } else if (target === 'Mars') {
             setImage(marsImage)
             setName(destinations[1].name)
             setDesc(destinations[1].description)
             setDistance(destinations[1].distance)
             setTravel(destinations[1].travel)
-        } else if (target.textContent === 'Europa') {
+
+        } else if (target === 'Europa') {
             setImage(europaImage)
             setName(destinations[2].name)
             setDesc(destinations[2].description)
             setDistance(destinations[2].distance)
             setTravel(destinations[2].travel)
-        } else if (target.textContent === 'Titan') {
+
+        } else if (target === 'Titan') {
             setImage(titanImage)
             setName(destinations[3].name)
             setDesc(destinations[3].description)
