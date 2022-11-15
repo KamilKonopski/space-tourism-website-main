@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import Button from '../../components/Button/Button';
 import Header from '../../components/Header/Header';
 
 import { destinations } from '../../data/data';
@@ -51,10 +52,10 @@ function Destination() {
         <div className={classes['destination-page']}>
             <Header />
             <main>
-                <button onClick={changeContentHandler}>Moon</button>
-                <button onClick={changeContentHandler}>Mars</button>
-                <button onClick={changeContentHandler}>Titan</button>
-                <button onClick={changeContentHandler}>Europa</button>
+                <Button onChangeContent={changeContentHandler}>Moon</Button>
+                <Button onChangeContent={changeContentHandler}>Mars</Button>
+                <Button onChangeContent={changeContentHandler}>Titan</Button>
+                <Button onChangeContent={changeContentHandler}>Europa</Button>
                 <img src={image} alt={name} />
                 <span>{name}</span>
                 <p>{desc}</p>
