@@ -39,12 +39,18 @@ function Technology() {
     return (
         <div className={classes['technology-page']}>
             <Header />
-            <Button onChangeContent={changeContentHandler}>1</Button>
-            <Button onChangeContent={changeContentHandler}>2</Button>
-            <Button onChangeContent={changeContentHandler}>3</Button>
-            <span>{name}</span>
-            <span>{desc}</span>
-            <img src={image} alt={name} />
+            <main>
+                <h2><strong>03</strong>space launch 101</h2>
+                <div>
+                    <img src={image} alt={name} />
+                </div>
+                <Button onChangeContent={changeContentHandler}>1</Button>
+                <Button onChangeContent={changeContentHandler}>2</Button>
+                <Button onChangeContent={changeContentHandler}>3</Button>
+                <span>the terminology...</span>
+                <h3>{name}</h3>
+                <p>{desc}</p>
+            </main>
         </div>
     );
 };
