@@ -55,12 +55,15 @@ function Destination() {
         <div className={classes['destination-page']}>
             <Header />
             <main>
+                <h2><span>01</span>pick your destination</h2>
+                <div>
+                    <img src={image} alt={name} />
+                </div>
                 <Button onChangeContent={changeContentHandler}>Moon</Button>
                 <Button onChangeContent={changeContentHandler}>Mars</Button>
                 <Button onChangeContent={changeContentHandler}>Titan</Button>
                 <Button onChangeContent={changeContentHandler}>Europa</Button>
-                <img src={image} alt={name} />
-                <span>{name}</span>
+                <h3>{name}</h3>
                 <p>{desc}</p>
                 <span>{distance}</span>
                 <span>{travel}</span>
