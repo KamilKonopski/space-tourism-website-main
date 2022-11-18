@@ -50,7 +50,7 @@ function Crew() {
         <div className={classes['crew-page']}>
             <Header />
             <main>
-                <h2><span>02</span>meet your crew</h2>
+                <h2><strong>02</strong>meet your crew</h2>
                 <div>
                     <img src={image} alt={name} />
                 </div>

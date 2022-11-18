@@ -54,7 +54,7 @@ function Destination() {
         <div className={classes['destination-page']}>
             <Header />
             <main>
-                <h2><span>01</span>pick your destination</h2>
+                <h2><strong>01</strong>pick your destination</h2>
                 <div>
                     <img src={image} alt={name} />
                 </div>
