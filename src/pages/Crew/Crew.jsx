@@ -49,14 +49,19 @@ function Crew() {
     return (
         <div className={classes['crew-page']}>
             <Header />
-            <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>1</span></Button>
-            <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>2</span></Button>
-            <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>3</span></Button>
-            <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>4</span></Button>
-            <img src={image} alt={name} />
-            <span>{name}</span>
-            <span>{role}</span>
-            <p>{bio}</p>
+            <main>
+                <h2><span>02</span>meet your crew</h2>
+                <div>
+                    <img src={image} alt={name} />
+                </div>
+                <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>1</span></Button>
+                <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>2</span></Button>
+                <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>3</span></Button>
+                <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>4</span></Button>
+                <span>{role}</span>
+                <h3>{name}</h3>
+                <p>{bio}</p>
+            </main>
         </div>
     );
 };
