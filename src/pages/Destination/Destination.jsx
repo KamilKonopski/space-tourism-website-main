@@ -55,7 +55,7 @@ function Destination() {
             <Header />
             <main>
                 <h2><strong>01</strong>pick your destination</h2>
-                <div>
+                <div className={classes.image}>
                     <img src={image} alt={name} />
                 </div>
                 <Button onChangeContent={changeContentHandler}>Moon</Button>
