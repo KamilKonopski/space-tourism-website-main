@@ -51,7 +51,7 @@ function Crew() {
             <Header />
             <main>
                 <h2><strong>02</strong>meet your crew</h2>
-                <div>
+                <div className={classes.image}>
                     <img src={image} alt={name} />
                 </div>
                 <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>1</span></Button>
