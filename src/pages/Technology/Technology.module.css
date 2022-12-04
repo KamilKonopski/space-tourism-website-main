@@ -4,6 +4,41 @@
     background-size: cover;
 }
 
+.technology-page h2 {
+    color: var(--white-color);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 0.27rem;
+}
+
+.technology-page h2 span {
+    font-weight: bold;
+}
+
+.technology-page .image img {
+    width: 100%;
+}
+
+.technology-page span {
+    color: var(--light-color);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.236rem;
+}
+
+.technology-page h3 {
+    color: var(--white-color);
+    font-size: 2.4rem;
+}
+
+.technology-page p {
+    color: var(--light-color);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+
 @media screen and (min-width: 800px) {
     .technology-page {
         background-image: url(../../assets/technology/background-technology-tablet.jpg);

@@ -41,7 +41,7 @@ function Technology() {
             <Header />
             <main>
                 <h2><strong>03</strong>space launch 101</h2>
-                <div>
+                <div className={classes.image}>
                     <img src={image} alt={name} />
                 </div>
                 <Button onChangeContent={changeContentHandler}>1</Button>
