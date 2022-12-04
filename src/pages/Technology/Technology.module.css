@@ -43,6 +43,25 @@
     .technology-page {
         background-image: url(../../assets/technology/background-technology-tablet.jpg);
     }
+
+    .technology-page h2 {
+        font-size: 2rem;
+        letter-spacing: 0.338rem;
+    }
+
+    .technology-page span {
+        font-size: 1.6rem;
+        letter-spacing: 0.27rem;
+    }
+
+    .technology-page h3 {
+        font-size: 4rem;
+    }
+
+    .technology-page p {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
 }
 
 @media screen and (min-width: 1280px) {
