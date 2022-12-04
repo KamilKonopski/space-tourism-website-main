@@ -39,6 +39,20 @@
     .destination-page {
         background-image: url(../../assets/destination/background-destination-tablet.jpg);
     }
+
+    .destination-page h2 {
+        font-size: 2rem;
+        letter-spacing: 0.338rem;
+    }
+
+    .destination-page h3 {
+        font-size: 8rem;
+    }
+
+    .destination-page p {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
 }
 
 @media screen and (min-width: 1280px) {
