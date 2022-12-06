@@ -68,4 +68,18 @@
     .technology-page {
         background-image: url(../../assets/technology/background-technology-desktop.jpg);
     }
+
+    .technology-page h2 {
+        font-size: 2.8rem;
+        letter-spacing: 0.472rem;
+    }
+
+    .technology-page h3 {
+        font-size: 5.6rem;
+    }
+
+    .technology-page p {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+    }
 }
