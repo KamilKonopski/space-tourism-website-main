@@ -59,4 +59,18 @@
     .destination-page {
         background-image: url(../../assets/destination/background-destination-desktop.jpg);
     }
+
+    .destination-page h2 {
+        font-size: 2.8rem;
+        letter-spacing: 0.472rem;
+    }
+
+    .destination-page h3 {
+        font-size: 10rem;
+    }
+
+    .destination-page p {
+        font-size: 1.9rem;
+        line-height: 3.2rem;
+    }
 }
