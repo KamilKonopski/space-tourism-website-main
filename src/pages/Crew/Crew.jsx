@@ -50,17 +50,17 @@ function Crew() {
         <div className={classes['crew-page']}>
             <Header />
             <main>
-                <h2><strong>02</strong>meet your crew</h2>
-                <div className={classes.image}>
-                    <img src={image} alt={name} />
+                <h2 className={classes['crew-page__heading']}><strong>02</strong>meet your crew</h2>
+                <div className={classes['crew-page__image-container']}>
+                    <img className={classes['crew-page__image']} src={image} alt={name} />
                 </div>
                 <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>1</span></Button>
                 <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>2</span></Button>
                 <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>3</span></Button>
                 <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>4</span></Button>
-                <span>{role}</span>
-                <h3>{name}</h3>
-                <p>{bio}</p>
+                <span className={classes['crew-page__role']}>{role}</span>
+                <h3 className={classes['crew-page__name']}>{name}</h3>
+                <p className={classes['crew-page__bio']}>{bio}</p>
             </main>
         </div>
     );
