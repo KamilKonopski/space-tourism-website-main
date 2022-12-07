@@ -4,26 +4,26 @@
     background-size: cover;
 }
 
-.home-page h2 {
+.home-page__heading {
     color: var(--light-color);
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.6rem;
     letter-spacing: 2.7px;
 }
 
-.home-page h1 {
+.home-page__space {
     color: var(--white-color);
     font-size: 8rem;
     line-height: 100px;
 }
 
-.home-page p {
+.home-page__description {
     color: var(--light-color);
     font-size: 1.5rem;
     line-height: 25px;
 }
 
-.home-page button {
+.home-page__btn {
     background-color: var(--white-color);
     border-radius: 50%;
     height: 150px;
@@ -35,22 +35,22 @@
         background-image: url(../../assets/home/background-home-tablet.jpg);
     }
 
-    .home-page h2 {
+    .home-page__heading {
         font-size: 2rem;
         letter-spacing: 3.38px;
     }
 
-    .home-page h1 {
+    .home-page__space {
         font-size: 15rem;
         line-height: 150px;
     }
 
-    .home-page p {
+    .home-page__description {
         font-size: 1.6rem;
         line-height: 28px;
     }
 
-    .home-page button {
+    .home-page__btn {
         height: 242px;
         width: 242px;
     }
@@ -61,21 +61,21 @@
         background-image: url(../../assets/home/background-home-desktop.jpg);
     }
 
-    .home-page h2 {
+    .home-page__heading {
         font-size: 2.8rem;
         letter-spacing: 4.42px;
     }
 
-    .home-page h1 {
+    .home-page__space {
         line-height: auto;
     }
 
-    .home-page p {
+    .home-page__description {
         font-size: 1.8rem;
         line-height: 32px;
     }
 
-    .home-page button {
+    .home-page__btn {
         height: 274px;
         width: 274px;
     }
