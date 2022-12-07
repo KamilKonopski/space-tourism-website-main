@@ -54,18 +54,18 @@ function Destination() {
         <div className={classes['destination-page']}>
             <Header />
             <main>
-                <h2><strong>01</strong>pick your destination</h2>
-                <div className={classes.image}>
-                    <img src={image} alt={name} />
+                <h2 className={classes['destination-page__heading']}><strong>01</strong>pick your destination</h2>
+                <div className={classes['destination-page__image-container']}>
+                    <img className={classes['destination-page__image']} src={image} alt={name} />
                 </div>
                 <Button onChangeContent={changeContentHandler}>Moon</Button>
                 <Button onChangeContent={changeContentHandler}>Mars</Button>
                 <Button onChangeContent={changeContentHandler}>Titan</Button>
                 <Button onChangeContent={changeContentHandler}>Europa</Button>
-                <h3>{name}</h3>
-                <p>{desc}</p>
-                <span>{distance}</span>
-                <span>{travel}</span>
+                <h3 className={classes['destination-page__name']}>{name}</h3>
+                <p className={classes['destination-page__description']}>{desc}</p>
+                <span className={classes['destination-page__info']}>{distance}</span>
+                <span className={classes['destination-page__info']}>{travel}</span>
             </main>
         </div>
     );

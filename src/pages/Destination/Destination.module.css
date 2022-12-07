@@ -4,33 +4,29 @@
     background-size: cover;
 }
 
-.destination-page h2 {
+.destination-page__heading {
     color: var(--white-color);
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.6rem;
     letter-spacing: 0.27rem;
 }
 
-.destination-page h2 span {
-    font-weight: bold;
-}
-
-.destination-page .image img {
+.destination-page__image {
     width: 100%;
 }
 
-.destination-page h3 {
+.destination-page__name {
     color: var(--white-color);
     font-size: 5.6rem;
 }
 
-.destination-page p {
+.destination-page__description {
     color: var(--light-color);
     font-size: 1.5rem;
     line-height: 2.5rem;
 }
 
-.destination-page span {
+.destination-page__info {
     color: var(--white-color);
     font-size: 2.8rem;
 }
@@ -40,16 +36,16 @@
         background-image: url(../../assets/destination/background-destination-tablet.jpg);
     }
 
-    .destination-page h2 {
+    .destination-page__heading {
         font-size: 2rem;
         letter-spacing: 0.338rem;
     }
 
-    .destination-page h3 {
+    .destination-page__name {
         font-size: 8rem;
     }
 
-    .destination-page p {
+    .destination-page__description {
         font-size: 1.6rem;
         line-height: 2.8rem;
     }
@@ -60,16 +56,16 @@
         background-image: url(../../assets/destination/background-destination-desktop.jpg);
     }
 
-    .destination-page h2 {
+    .destination-page__heading {
         font-size: 2.8rem;
         letter-spacing: 0.472rem;
     }
 
-    .destination-page h3 {
+    .destination-page__name {
         font-size: 10rem;
     }
 
-    .destination-page p {
+    .destination-page__description {
         font-size: 1.9rem;
         line-height: 3.2rem;
     }
