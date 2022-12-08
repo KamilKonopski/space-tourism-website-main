@@ -54,10 +54,12 @@ function Crew() {
                 <div className={classes['crew-page__image-container']}>
                     <img className={classes['crew-page__image']} src={image} alt={name} />
                 </div>
-                <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>1</span></Button>
-                <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>2</span></Button>
-                <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>3</span></Button>
-                <Button onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>4</span></Button>
+                <div className={classes['crew-page__btn-container']}>
+                    <Button className={classes['crew-page__btn']} onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>1</span></Button>
+                    <Button className={classes['crew-page__btn']} onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>2</span></Button>
+                    <Button className={classes['crew-page__btn']} onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>3</span></Button>
+                    <Button className={classes['crew-page__btn']} onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>4</span></Button>
+                </div>
                 <span className={classes['crew-page__role']}>{role}</span>
                 <h3 className={classes['crew-page__name']}>{name}</h3>
                 <p className={classes['crew-page__bio']}>{bio}</p>

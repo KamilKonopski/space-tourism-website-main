@@ -15,6 +15,25 @@
     width: 100%;
 }
 
+.crew-page__btn-container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.crew-page__btn {
+    background-color: rgba(255, 255, 255, 0.17);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+}
+
+.crew-page__btn:hover {
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
 .crew-page__role {
     color: var(--white-color);
     font-size: 1.6rem;
