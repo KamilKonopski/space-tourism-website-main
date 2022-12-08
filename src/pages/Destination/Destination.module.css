@@ -15,6 +15,34 @@
     width: 100%;
 }
 
+.destination-page__btn-container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 20px;
+}
+
+.destination-page__btn {
+    background: transparent;
+    border: none;
+    color: var(--light-color);
+    cursor: pointer;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.236rem;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.destination-page__btn:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, .5);
+}
+
+.destination-page__btn--active {
+    border-bottom: 3px solid var(--white-color);
+    color: var(--white-color);
+}
+
 .destination-page__name {
     color: var(--white-color);
     font-size: 5.6rem;

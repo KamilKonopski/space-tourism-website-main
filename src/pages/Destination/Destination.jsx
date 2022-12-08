@@ -58,10 +58,12 @@ function Destination() {
                 <div className={classes['destination-page__image-container']}>
                     <img className={classes['destination-page__image']} src={image} alt={name} />
                 </div>
-                <Button onChangeContent={changeContentHandler}>Moon</Button>
-                <Button onChangeContent={changeContentHandler}>Mars</Button>
-                <Button onChangeContent={changeContentHandler}>Titan</Button>
-                <Button onChangeContent={changeContentHandler}>Europa</Button>
+                <div className={classes['destination-page__btn-container']}>
+                    <Button className={[classes['destination-page__btn'], classes['destination-page__btn--active']].join(' ')} onChangeContent={changeContentHandler}>Moon</Button>
+                    <Button className={classes['destination-page__btn']} onChangeContent={changeContentHandler}>Mars</Button>
+                    <Button className={classes['destination-page__btn']} onChangeContent={changeContentHandler}>Titan</Button>
+                    <Button className={classes['destination-page__btn']} onChangeContent={changeContentHandler}>Europa</Button>
+                </div>
                 <h3 className={classes['destination-page__name']}>{name}</h3>
                 <p className={classes['destination-page__description']}>{desc}</p>
                 <span className={classes['destination-page__info']}>{distance}</span>
