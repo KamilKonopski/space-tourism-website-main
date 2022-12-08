@@ -44,9 +44,11 @@ function Technology() {
                 <div className={classes['technology-page__image-container']}>
                     <img className={classes['technology-page__image']} src={image} alt={name} />
                 </div>
-                <Button onChangeContent={changeContentHandler}>1</Button>
-                <Button onChangeContent={changeContentHandler}>2</Button>
-                <Button onChangeContent={changeContentHandler}>3</Button>
+                <div className={classes['technology-page__btn-container']}>
+                    <Button className={classes['technology-page__btn']} onChangeContent={changeContentHandler}>1</Button>
+                    <Button className={classes['technology-page__btn']} onChangeContent={changeContentHandler}>2</Button>
+                    <Button className={classes['technology-page__btn']} onChangeContent={changeContentHandler}>3</Button>
+                </div>
                 <span className={classes['technology-page__terminology']}>the terminology...</span>
                 <h3 className={classes['technology-page__name']}>{name}</h3>
                 <p className={classes['technology-page__description']}>{desc}</p>

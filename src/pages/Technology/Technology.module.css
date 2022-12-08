@@ -15,6 +15,26 @@
     width: 100%;
 }
 
+.technology-page__btn-container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.technology-page__btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    color: var(--white-color);
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.technology-page__btn:hover {
+    border-color: rgba(255, 255, 255, 1);
+}
+
 .technology-page__terminology {
     color: var(--light-color);
     font-family: 'Barlow Condensed', sans-serif;
