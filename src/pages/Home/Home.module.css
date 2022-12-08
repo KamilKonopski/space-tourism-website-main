@@ -26,8 +26,20 @@
 .home-page__btn {
     background-color: var(--white-color);
     border-radius: 50%;
+    cursor: pointer;
     height: 150px;
     width: 150px;
+}
+
+.home-page__btn:hover {
+    box-shadow: 0px 0px 0px 50px rgba(255, 255, 255, 0.1);
+}
+
+.home-page__btn-explore {
+    color: var(--dark-color);
+    font-size: 2rem;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 800px) {
