@@ -24,10 +24,6 @@ function Destination() {
         isDestination({ ...destination, activeObject: destination.objects[index] })
     }
 
-    function toggleActiveHandler(index) {
-        isDestination({ ...destination, activeObject: destination.objects[index] })
-    }
-
     function toggleClassHandler(index) {
         if (destination.objects[index] === destination.activeObject) {
             return `${[classes['destination-page__btn'], classes['destination-page__btn--active']].join(' ')}`
@@ -45,7 +41,7 @@ function Destination() {
                 </div>
                 <div className={classes['destination-page__btn-container']}>
                     {destination.objects.map((el, index) => (
-                        <button key={el.name} className={toggleClassHandler(index)} onClick={() => { changeContentHandler(index); toggleActiveHandler(index) }}>{el.name}</button>
+                        <button key={el.name} className={toggleClassHandler(index)} onClick={() => changeContentHandler(index)}>{el.name}</button>
                     ))}
                 </div>
                 <h3 className={classes['destination-page__name']}>{destination.activeObject.name}</h3>
