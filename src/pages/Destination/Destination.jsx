@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-import Button from '../../components/Button/Button';
 import Header from '../../components/Header/Header';
 
 import { destinations } from '../../data/data';
@@ -18,36 +17,29 @@ function Destination() {
     const [desc, setDesc] = useState(destinations[0].description);
     const [distance, setDistance] = useState(destinations[0].distance);
     const [travel, setTravel] = useState(destinations[0].travel);
+    const [isActive, setIsActive] = useState({
+        activeObject: destinations[0],
+        objects: destinations,
+        images: [moonImage, marsImage, titanImage, europaImage]
+    })
 
-    function changeContentHandler(e) {
-        const target = e.target.textContent
-        if (target === 'Moon') {
-            setImage(moonImage)
-            setName(destinations[0].name)
-            setDesc(destinations[0].description)
-            setDistance(destinations[0].distance)
-            setTravel(destinations[0].travel)
+    function changeContentHandler(index) {
+        setImage(isActive.images[index])
+        setName(isActive.objects[index].name)
+        setDesc(isActive.objects[index].description)
+        setDistance(isActive.objects[index].distance)
+        setTravel(isActive.objects[index].travel)
+    }
 
-        } else if (target === 'Mars') {
-            setImage(marsImage)
-            setName(destinations[1].name)
-            setDesc(destinations[1].description)
-            setDistance(destinations[1].distance)
-            setTravel(destinations[1].travel)
+    function toggleActiveHandler(index) {
+        setIsActive({ ...isActive, activeObject: isActive.objects[index] })
+    }
 
-        } else if (target === 'Europa') {
-            setImage(europaImage)
-            setName(destinations[2].name)
-            setDesc(destinations[2].description)
-            setDistance(destinations[2].distance)
-            setTravel(destinations[2].travel)
-
-        } else if (target === 'Titan') {
-            setImage(titanImage)
-            setName(destinations[3].name)
-            setDesc(destinations[3].description)
-            setDistance(destinations[3].distance)
-            setTravel(destinations[3].travel)
+    function toggleClassHandler(index) {
+        if (isActive.objects[index] === isActive.activeObject) {
+            return `${[classes['destination-page__btn'], classes['destination-page__btn--active']].join(' ')}`
+        } else {
+            return `${classes['destination-page__btn']}`
         }
     }
     return (
@@ -59,10 +51,9 @@ function Destination() {
                     <img className={classes['destination-page__image']} src={image} alt={name} />
                 </div>
                 <div className={classes['destination-page__btn-container']}>
-                    <Button className={[classes['destination-page__btn'], classes['destination-page__btn--active']].join(' ')} onChangeContent={changeContentHandler}>Moon</Button>
-                    <Button className={classes['destination-page__btn']} onChangeContent={changeContentHandler}>Mars</Button>
-                    <Button className={classes['destination-page__btn']} onChangeContent={changeContentHandler}>Titan</Button>
-                    <Button className={classes['destination-page__btn']} onChangeContent={changeContentHandler}>Europa</Button>
+                    {isActive.objects.map((el, index) => (
+                        <button key={el.name} className={toggleClassHandler(index)} onClick={() => { changeContentHandler(index); toggleActiveHandler(index) }}>{el.name}</button>
+                    ))}
                 </div>
                 <h3 className={classes['destination-page__name']}>{name}</h3>
                 <p className={classes['destination-page__description']}>{desc}</p>
