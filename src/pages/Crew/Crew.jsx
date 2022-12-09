@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
-import Button from "../../components/Button/Button";
 import Header from "../../components/Header/Header";
 
 import { crews } from "../../data/data";
+
 import anoushehImage from '../../assets/crew/image-anousheh-ansari.webp';
 import douglasImage from '../../assets/crew/image-douglas-hurley.webp';
 import markImage from '../../assets/crew/image-mark-shuttleworth.webp';
@@ -13,38 +13,24 @@ import classes from './Crew.module.css';
 
 function Crew() {
     const [image, setImage] = useState(douglasImage);
-    const [name, setName] = useState(crews[0].name);
-    const [role, setRole] = useState(crews[0].role);
-    const [bio, setBio] = useState(crews[0].bio);
+    const [crew, isCrew] = useState({
+        activeObject: crews[0],
+        objects: crews,
+        images: [douglasImage, markImage, viktorImage, anoushehImage]
+    })
 
-    function changeContentHandler(e) {
-        const target = e.target.textContent
+    function changeContentHandler(index) {
+        setImage(crew.images[index])
+        isCrew({ ...crew, activeObject: crew.objects[index] })
+    }
 
-        if (target === '1') {
-            setImage(douglasImage)
-            setName(crews[0].name)
-            setRole(crews[0].role)
-            setBio(crews[0].bio)
-
-        } else if (target === '2') {
-            setImage(markImage)
-            setName(crews[1].name)
-            setRole(crews[1].role)
-            setBio(crews[1].bio)
-
-        } else if (target === '3') {
-            setImage(viktorImage)
-            setName(crews[2].name)
-            setRole(crews[2].role)
-            setBio(crews[2].bio)
-
-        } else if (target === '4') {
-            setImage(anoushehImage)
-            setName(crews[3].name)
-            setRole(crews[3].role)
-            setBio(crews[3].bio)
+    function toggleClassHandler(index) {
+        if (crew.objects[index] === crew.activeObject) {
+            return `${[classes['crew-page__btn'], classes['crew-page__btn--active']].join(' ')}`
+        } else {
+            return `${classes['crew-page__btn']}`
         }
-    };
+    }
 
     return (
         <div className={classes['crew-page']}>
@@ -52,17 +38,16 @@ function Crew() {
             <main>
                 <h2 className={classes['crew-page__heading']}><strong>02</strong>meet your crew</h2>
                 <div className={classes['crew-page__image-container']}>
-                    <img className={classes['crew-page__image']} src={image} alt={name} />
+                    <img className={classes['crew-page__image']} src={image} alt={crew.activeObject.name} />
                 </div>
                 <div className={classes['crew-page__btn-container']}>
-                    <Button className={classes['crew-page__btn']} onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>1</span></Button>
-                    <Button className={classes['crew-page__btn']} onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>2</span></Button>
-                    <Button className={classes['crew-page__btn']} onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>3</span></Button>
-                    <Button className={classes['crew-page__btn']} onChangeContent={changeContentHandler}><span className={classes['crew-page__id']}>4</span></Button>
+                    {crew.objects.map((el, index) => (
+                        <button key={el.name} className={toggleClassHandler(index)} onClick={() => changeContentHandler(index)}></button>
+                    ))}
                 </div>
-                <span className={classes['crew-page__role']}>{role}</span>
-                <h3 className={classes['crew-page__name']}>{name}</h3>
-                <p className={classes['crew-page__bio']}>{bio}</p>
+                <span className={classes['crew-page__role']}>{crew.activeObject.role}</span>
+                <h3 className={classes['crew-page__name']}>{crew.activeObject.name}</h3>
+                <p className={classes['crew-page__bio']}>{crew.activeObject.bio}</p>
             </main>
         </div>
     );
