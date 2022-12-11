@@ -12,29 +12,6 @@ import classes from './Technology.module.css';
 
 function Technology() {
     const [image, setImage] = useState(vehicleImage);
-    // const [name, setName] = useState(technologies[0].name);
-    // const [desc, setDesc] = useState(technologies[0].description);
-
-    // function changeContentHandler(e) {
-    //     const target = e.target.textContent
-
-    //     if (target === '1') {
-    //         setImage(vehicleImage);
-    //         setName(technologies[0].name)
-    //         setDesc(technologies[0].description)
-
-    //     } else if (target === '2') {
-    //         setImage(capsuleImage);
-    //         setName(technologies[1].name)
-    //         setDesc(technologies[1].description)
-
-    //     } else if (target === '3') {
-    //         setImage(spaceportImage);
-    //         setName(technologies[2].name)
-    //         setDesc(technologies[2].description)
-    //     }
-    // };
-
     const [technology, isTechnology] = useState({
         activeObject: technologies[0],
         objects: technologies,
