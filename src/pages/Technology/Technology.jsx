@@ -1,25 +1,36 @@
-import { useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 import Header from "../../components/Header/Header";
 
-import vehicleImage from '../../assets/technology/image-launch-vehicle-landscape.jpg';
-import capsuleImage from '../../assets/technology/image-space-capsule-landscape.jpg';
-import spaceportImage from '../../assets/technology/image-spaceport-landscape.jpg';
+import landVehicleImage from '../../assets/technology/image-launch-vehicle-landscape.jpg';
+import landCapsuleImage from '../../assets/technology/image-space-capsule-landscape.jpg';
+import landSpaceportImage from '../../assets/technology/image-spaceport-landscape.jpg';
+import portVehicleImage from '../../assets/technology/image-launch-vehicle-portrait.jpg';
+import portCapsuleImage from '../../assets/technology/image-space-capsule-portrait.jpg';
+import portSpaceportImage from '../../assets/technology/image-spaceport-portrait.jpg';
 
 import { technologies } from "../../data/data";
 
 import classes from './Technology.module.css';
 
 function Technology() {
-    const [image, setImage] = useState(vehicleImage);
+    const [image, setImage] = useState(portVehicleImage);
     const [technology, isTechnology] = useState({
         activeObject: technologies[0],
         objects: technologies,
-        images: [vehicleImage, spaceportImage, capsuleImage]
+        landImages: [landVehicleImage, landSpaceportImage, landCapsuleImage],
+        portImages: [portVehicleImage, portSpaceportImage, portCapsuleImage],
     })
+    const [width, setWidth] = useState(0);
+    const ref = useRef(null);
 
     function changeContentHandler(index) {
-        setImage(technology.images[index])
+        if (width <= 1279) {
+            setImage(technology.landImages[index])
+        } else {
+            setImage(technology.portImages[index])
+        }
+
         isTechnology({ ...technology, activeObject: technology.objects[index] })
     }
 
@@ -31,8 +42,21 @@ function Technology() {
         }
     }
 
+    useEffect(() => {
+        if (width <= 1279) {
+            setImage(landVehicleImage)
+        } else {
+            setImage(portVehicleImage)
+        }
+    }, [width])
+
+    useLayoutEffect(() => {
+        setWidth(ref.current.offsetWidth);
+    }, []);
+
     return (
-        <div className={classes['technology-page']}>
+        <div className={classes['technology-page']} ref={ref}>
+            <span>{width}</span>
             <Header />
             <main>
                 <h2 className={classes['technology-page__heading']}><strong>03</strong>space launch 101</h2>
