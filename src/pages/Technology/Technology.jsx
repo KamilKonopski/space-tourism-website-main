@@ -5,6 +5,7 @@ import Header from "../../components/Header/Header";
 import landVehicleImage from '../../assets/technology/image-launch-vehicle-landscape.jpg';
 import landCapsuleImage from '../../assets/technology/image-space-capsule-landscape.jpg';
 import landSpaceportImage from '../../assets/technology/image-spaceport-landscape.jpg';
+
 import portVehicleImage from '../../assets/technology/image-launch-vehicle-portrait.jpg';
 import portCapsuleImage from '../../assets/technology/image-space-capsule-portrait.jpg';
 import portSpaceportImage from '../../assets/technology/image-spaceport-portrait.jpg';
