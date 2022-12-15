@@ -29,8 +29,8 @@ function Menu({ isVisible, hideMobileMenu }) {
                 <img src={closeMobileMenu} alt="close mobile menu icon" />
             </div>
             {links.map((link, index) => (
-                <li key={index}>
-                    <NavLink to={`${link.path}`}><span>0{index}</span>{link.name}</NavLink>
+                <li className={classes['menu__link']} key={index}>
+                    <NavLink className={classes['menu__item']} to={`${link.path}`}><span>0{index}</span>{link.name}</NavLink>
                 </li>
             ))
             }
