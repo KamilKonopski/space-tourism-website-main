@@ -4,12 +4,14 @@
     justify-content: space-between;
 }
 
-.logo {
+.header__logo {
     height: 40px;
     padding: 24px;
     width: 40px;
 }
 
-.nav {
-    height: 100vh;
+.burger {
+    height: 2.1rem;
+    margin: 33px 25px;
+    width: 2.4rem;
 }
