@@ -20,11 +20,11 @@ function Header() {
 
     return (
         <header className={classes.header}>
-            <div className={classes.logo}>
+            <div className={classes['header__logo']}>
                 <img src={logoImage} alt="star logo" />
             </div>
             <div></div>
-            <nav className={classes.nav}>
+            <nav className={classes['header__nav']}>
                 <div className={classes.burger} onClick={showMobileMenu}>
                     <img src={mobileMenu} alt="hamburger menu" />
                 </div>
