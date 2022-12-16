@@ -58,8 +58,8 @@ function Technology() {
     return (
         <div className={classes['technology-page']} ref={ref}>
             <Header />
-            <main>
-                <h2 className={classes['technology-page__heading']}><strong>03</strong>space launch 101</h2>
+            <main className={classes['technology-page__content-container']}>
+                <h2 className={classes['technology-page__heading']}><span>03</span>space launch 101</h2>
                 <div className={classes['technology-page__image-container']}>
                     <img className={classes['technology-page__image']} src={image} alt={technology.activeObject.name} />
                 </div>
