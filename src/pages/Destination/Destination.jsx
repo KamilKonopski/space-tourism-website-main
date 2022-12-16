@@ -35,7 +35,7 @@ function Destination() {
         <div className={classes['destination-page']}>
             <Header />
             <main className={classes['destination-page__content-container']}>
-                <h2 className={classes['destination-page__heading']}><strong>01</strong>pick your destination</h2>
+                <h2 className={classes['destination-page__heading']}><span>01</span>pick your destination</h2>
                 <div className={classes['destination-page__image-container']}>
                     <img className={classes['destination-page__image']} src={image} alt={destination.activeObject.name} />
                 </div>
