@@ -34,7 +34,7 @@ function Destination() {
     return (
         <div className={classes['destination-page']}>
             <Header />
-            <main>
+            <main className={classes['destination-page__content-container']}>
                 <h2 className={classes['destination-page__heading']}><strong>01</strong>pick your destination</h2>
                 <div className={classes['destination-page__image-container']}>
                     <img className={classes['destination-page__image']} src={image} alt={destination.activeObject.name} />
@@ -46,8 +46,14 @@ function Destination() {
                 </div>
                 <h3 className={classes['destination-page__name']}>{destination.activeObject.name}</h3>
                 <p className={classes['destination-page__description']}>{destination.activeObject.description}</p>
-                <span className={classes['destination-page__info']}>{destination.activeObject.distance}</span>
-                <span className={classes['destination-page__info']}>{destination.activeObject.travel}</span>
+                <div className={classes['destination-page__info-container']}>
+                    <span className={classes['destination-page__info-text']}>avg. distance</span>
+                    <span className={classes['destination-page__info']}>{destination.activeObject.distance}</span>
+                </div>
+                <div className={classes['destination-page__info-container']}>
+                    <span className={classes['destination-page__info-text']}>est. travel time</span>
+                    <span className={classes['destination-page__info']}>{destination.activeObject.travel}</span>
+                </div>
             </main>
         </div>
     );
