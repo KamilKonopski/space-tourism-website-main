@@ -35,8 +35,8 @@ function Crew() {
     return (
         <div className={classes['crew-page']}>
             <Header />
-            <main>
-                <h2 className={classes['crew-page__heading']}><strong>02</strong>meet your crew</h2>
+            <main className={classes['crew-page__content-container']}>
+                <h2 className={classes['crew-page__heading']}><span>02</span>meet your crew</h2>
                 <div className={classes['crew-page__image-container']}>
                     <img className={classes['crew-page__image']} src={image} alt={crew.activeObject.name} />
                 </div>
