@@ -8,14 +8,14 @@ import logoImage from '../../assets/shared/logo.svg';
 import mobileMenu from '../../assets/shared/icon-hamburger.svg';
 
 function Header() {
-    const [isVisible, setIsVisible] = useState(false);
+    const [isShow, setIsShow] = useState(false);
 
     function showMobileMenu() {
-        setIsVisible(true)
+        setIsShow(true)
     };
 
     function hideMobileMenu() {
-        setIsVisible(false)
+        setIsShow(false)
     };
 
     return (
@@ -28,7 +28,7 @@ function Header() {
                 <div className={classes.burger} onClick={showMobileMenu}>
                     <img src={mobileMenu} alt="hamburger menu" />
                 </div>
-                <Menu isVisible={isVisible} hideMobileMenu={hideMobileMenu} />
+                <Menu isMenuShow={isShow} hideMobileMenu={hideMobileMenu} />
             </nav>
         </header>
 
