@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import classes from './Menu.module.css'
 import closeMobileMenu from '../../assets/shared/icon-close.svg';
 
-function Menu({ isVisible, hideMobileMenu }) {
+function Menu({ isMenuShow, hideMobileMenu }) {
     const links = [
         {
             name: 'home',
@@ -24,13 +24,13 @@ function Menu({ isVisible, hideMobileMenu }) {
     ]
 
     return (
-        <ul className={`${classes.menu} ${!isVisible && classes.hidden}`}>
+        <ul className={`${classes.menu} ${isMenuShow ? classes.show : ''}`}>
             <div className={classes['burger--close']} onClick={hideMobileMenu}>
                 <img src={closeMobileMenu} alt="close mobile menu icon" />
             </div>
             {links.map((link, index) => (
                 <li className={classes['menu__link']} key={index}>
-                    <NavLink className={classes['menu__item']} to={`${link.path}`}><span>0{index}</span>{link.name}</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? `${classes['menu__item']} ${classes['menu__item--active']}` : classes['menu__item']} to={`${link.path}`}><span>0{index}</span>{link.name}</NavLink>
                 </li>
             ))
             }
