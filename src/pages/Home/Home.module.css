@@ -2,7 +2,7 @@
     background-image: url(../../assets/home/background-home-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     overflow-x: hidden;
     position: relative;
     width: 100%;
