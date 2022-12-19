@@ -18,3 +18,26 @@ html {
     font-family: 'Bellefair', serif;
     font-size: 10px;
 }
+
+.footer {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__text {
+    color: var(--light-color);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.6rem;
+    padding: 1.5rem 0;
+}
+
+.footer__text a {
+    color: var(--dark-color);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer__text a:hover {
+    border-bottom: 2px solid var(--light-color);
+}
