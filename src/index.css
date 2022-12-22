@@ -20,20 +20,20 @@ html {
 }
 
 .footer {
-    background-color: transparent;
+    background-color: var(--dark-color);
     display: flex;
     justify-content: center;
 }
 
 .footer__text {
-    color: var(--light-color);
+    color: var(--white-color);
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.6rem;
     padding: 1.5rem 0;
 }
 
 .footer__text a {
-    color: var(--dark-color);
+    color: var(--light-color);
     text-decoration: none;
     text-transform: uppercase;
 }
