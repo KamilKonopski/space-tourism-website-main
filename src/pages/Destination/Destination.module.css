@@ -9,18 +9,20 @@
 }
 
 .destination-page__content-container {
-    align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .destination-page__heading {
     color: var(--white-color);
+    flex-basis: 100%;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.6rem;
     font-weight: normal;
     letter-spacing: 0.27rem;
     margin: 1rem 0 3rem 0;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -43,6 +45,8 @@
 .destination-page__btn-container {
     align-items: flex-start;
     display: flex;
+    flex-basis: 100%;
+    justify-content: center;
     margin: 1rem 2rem 2rem;
 }
 
@@ -70,13 +74,16 @@
 
 .destination-page__name {
     color: var(--white-color);
+    flex-basis: 100%;
     font-size: 5.6rem;
     font-weight: normal;
+    text-align: center;
     text-transform: uppercase;
 }
 
 .destination-page__description {
     color: var(--light-color);
+    flex-basis: 100%;
     font-size: 1.5rem;
     line-height: 2.5rem;
     margin: 0 5rem 3rem;
@@ -95,6 +102,7 @@
 
 .destination-page__info-container {
     display: flex;
+    flex-basis: 100%;
     flex-direction: column;
     margin: 1rem 0;
 }
