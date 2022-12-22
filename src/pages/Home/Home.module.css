@@ -60,6 +60,7 @@
 
 .home-page__btn-explore {
     color: var(--dark-color);
+    font-family: 'Bellefair', serif;
     font-size: 2rem;
     letter-spacing: 1.25px;
     text-transform: uppercase;
@@ -68,6 +69,10 @@
 @media screen and (min-width: 800px) {
     .home-page {
         background-image: url(../../assets/home/background-home-tablet.jpg);
+    }
+
+    .home-page__content {
+        margin: 15rem 17rem 10rem;
     }
 
     .home-page__heading {
@@ -88,6 +93,11 @@
     .home-page__btn {
         height: 242px;
         width: 242px;
+    }
+
+    .home-page__btn-explore {
+        font-size: 3.2rem;
+        letter-spacing: 0.2rem;
     }
 }
 
