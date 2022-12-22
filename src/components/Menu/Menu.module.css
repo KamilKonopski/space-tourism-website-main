@@ -47,6 +47,7 @@
         flex-direction: row;
         height: auto;
         transform: translateX(0);
+        padding: 15px 40px;
         position: static;
         width: 100%;
     }
@@ -60,9 +61,16 @@
         letter-spacing: 2.36px;
     }
 
+    .menu__item:hover {
+        border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+        border-radius: 3px;
+        padding-bottom: 3.2rem;
+    }
+
     .menu__item--active {
         border-bottom: 3px solid var(--white-color);
-        padding-bottom: 1.8rem;
+        border-radius: 3px;
+        padding-bottom: 3.2rem;
     }
 
     .menu__item span {
