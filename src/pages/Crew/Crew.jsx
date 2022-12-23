@@ -45,9 +45,11 @@ function Crew() {
                         <button key={el.name} className={toggleClassHandler(index)} onClick={() => changeContentHandler(index)}></button>
                     ))}
                 </div>
-                <span className={classes['crew-page__role']}>{crew.activeObject.role}</span>
-                <h3 className={classes['crew-page__name']}>{crew.activeObject.name}</h3>
-                <p className={classes['crew-page__bio']}>{crew.activeObject.bio}</p>
+                <div className={classes['crew-page__content']}>
+                    <span className={classes['crew-page__role']}>{crew.activeObject.role}</span>
+                    <h3 className={classes['crew-page__name']}>{crew.activeObject.name}</h3>
+                    <p className={classes['crew-page__bio']}>{crew.activeObject.bio}</p>
+                </div>
             </main>
         </div>
     );
