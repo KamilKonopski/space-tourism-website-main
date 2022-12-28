@@ -33,7 +33,10 @@
 }
 
 .crew-page__image-container {
+    display: flex;
+    flex-wrap: wrap;
     height: 24.2rem;
+    justify-content: center;
     margin-bottom: 3.5rem;
     width: 32.7rem;
 }
