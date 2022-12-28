@@ -106,22 +106,36 @@
         background-image: url(../../assets/home/background-home-desktop.jpg);
     }
 
+    .home-page__content-wrapper {
+        flex-direction: row;
+    }
+
+    .home-page__content {
+        margin: 20rem 0 0 30rem;
+        width: 50%;
+    }
+
     .home-page__heading {
         font-size: 2.8rem;
         letter-spacing: 4.42px;
+        text-align: left;
     }
 
     .home-page__space {
         line-height: auto;
+        text-align: left;
     }
 
     .home-page__description {
         font-size: 1.8rem;
         line-height: 32px;
+        padding: 0 56rem 0 0;
+        text-align: left;
     }
 
     .home-page__btn {
         height: 274px;
+        margin-top: 30rem;
         width: 274px;
     }
 }
