@@ -145,7 +145,7 @@
 
     .crew-page__btn-container {
         grid-area: buttons;
-        margin-bottom: 8rem;
+        margin-bottom: 14rem;
     }
 
     .crew-page__content {
