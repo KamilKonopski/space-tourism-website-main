@@ -188,13 +188,13 @@
         font-size: 2.8rem;
         grid-area: heading;
         letter-spacing: 0.472rem;
-        margin-left: 15rem;
+        margin-left: 35rem;
     }
 
     .destination-page__image-container {
         grid-area: image;
         height: 44.5rem;
-        margin: 5rem 0 0 23rem;
+        margin: 5rem 0 0 40rem;
         width: 44.5rem;
     }
 
@@ -213,17 +213,17 @@
         font-size: 1.9rem;
         grid-area: desc;
         line-height: 3.2rem;
-        padding: 0 36rem;
+        padding: 0 28rem;
         text-align: left;
     }
 
     .destination-page__info-container {
         align-items: flex-start;
-        margin: 0 0 10rem 41rem;
+        margin: 0 0 10rem 36rem;
         grid-area: info;
     }
 
     .destination-page__info-container:last-child {
-        margin: 0 0 0 64rem;
+        margin: 0 0 0 60rem;
     }
 }
