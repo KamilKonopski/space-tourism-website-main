@@ -23,7 +23,7 @@ function Header() {
             <div className={classes['header__logo']}>
                 <img src={logoImage} alt="star logo" />
             </div>
-            <div></div>
+            <div className={classes['header__line']}></div>
             <nav className={classes['header__nav']}>
                 <div className={classes.burger} onClick={showMobileMenu}>
                     <img src={mobileMenu} alt="hamburger menu" />
