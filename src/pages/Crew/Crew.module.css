@@ -175,21 +175,66 @@
         background-image: url(../../assets/crew/background-crew-desktop.jpg);
     }
 
+    .crew-page__content-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        justify-content: flex-start;
+    }
+
+
     .crew-page__heading {
         font-size: 2.8rem;
+        grid-column: 1/-1;
+        grid-row: 1/2;
         letter-spacing: 0.472rem;
+        margin-left: 73rem;
+    }
+
+    .crew-page__image-container {
+        grid-column: 2/-1;
+        grid-row: 2/-1;
+        height: 712px;
+        width: 568px;
+    }
+
+    .crew-page__btn-container {
+        grid-column: 1/2;
+        grid-row: -1/-2;
+        margin-right: 90px;
+    }
+
+    .crew-page__btn {
+        height: 15px;
+        width: 15px;
+    }
+
+    .crew-page__content {
+        margin-top: 100px;
     }
 
     .crew-page__role {
         font-size: 3.2rem;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: left;
     }
 
     .crew-page__name {
         font-size: 5.6rem;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 20px 0 50px 365px;
+        text-align: left;
     }
 
     .crew-page__bio {
         font-size: 1.8rem;
+        grid-column: 1/2;
+        grid-row: 4/5;
         line-height: 3.2rem;
+        margin-left: 220px;
+        padding: 0 15rem;
+        text-align: left;
     }
 }
